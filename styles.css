@@ -1,0 +1,77 @@
+:root {
+  --white: #fff;
+  --black: #0a0a23;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Noto Serif", serif;
+  color: var(--white);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--black);
+}
+
+.container {
+  text-align: center;
+}
+
+.input-container {
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  white-space: pre-wrap;
+}
+
+#output {
+  height: 22px;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+#number,
+#convert-btn {
+  padding: 0.5rem;
+}
+
+#number:focus {
+  outline: none;
+}
+
+#number {
+  width: 100px;
+  text-align: center;
+}
+
+#convert-btn {
+  color: var(--white);
+  background-color: var(--black);
+  border-style: solid;
+  font-weight: bold;
+}
+
+#convert-btn:hover {
+  color: var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.error {
+  color: #ff0000;
+}
